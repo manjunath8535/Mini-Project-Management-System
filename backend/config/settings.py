@@ -92,9 +92,7 @@ GRAPHENE = {
 }
 
 # CORS Setup (Allow React running on port 5173).
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5432",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Password validation
