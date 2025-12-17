@@ -42,8 +42,8 @@ class Task(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     # class for handling TaskComment (linking to tasks with content, author_email, timestamp).
-    class TaskComment(models.Model):
-        task = models.ForeignKey(Task, related_name='comments', on_delete=models.CASCADE) # type: ignore
-        content = models.TextField()
-        author_email = models.EmailField()
-        created_at = models.DateTimeField(auto_now_add=True)
+class TaskComment(models.Model):
+    task = models.ForeignKey(Task, related_name='comments', on_delete=models.CASCADE)
+    content = models.TextField()
+    author_email = models.EmailField()
+    created_at = models.DateTimeField(auto_now_add=True)
