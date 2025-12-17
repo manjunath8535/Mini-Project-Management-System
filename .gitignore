@@ -45,6 +45,7 @@ $RECYCLE.BIN/
 *.msp
 
 /backend/venv
+/frontend/*node
 
 # Windows shortcuts
 *.lnk
