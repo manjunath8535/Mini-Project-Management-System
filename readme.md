@@ -58,9 +58,12 @@ DATABASES = {
 ## After updating the setting.py file. Execute below commands.
 ```
 cd backend
+# Install required modules with this beloow command:
+pip install requirements.txt
 # To the backend project execute below command:
 python manage.py runserver.
 ```
+
 * Now visit localhost:5173 and check the website.
 ---
 
